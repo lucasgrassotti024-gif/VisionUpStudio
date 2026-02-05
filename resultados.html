@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sobre e Resultados — VisionUp Studio Videos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Conheça a VisionUp Studio Videos e veja exemplos reais de imagens transformadas em vídeos profissionais para vendas.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --black:#0b0b0b;
+      --yellow:#ffd000;
+      --green:#00c16a;
+      --white:#ffffff;
+      --gray:#b5b5b5;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+      font-family:'Inter',sans-serif;
+    }
+
+    body{
+      background:var(--black);
+      color:var(--white);
+      line-height:1.6;
+    }
+
+    header{
+      padding:20px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+
+    .logo{
+      font-size:1.4rem;
+      font-weight:800;
+    }
+
+    .logo span{color:var(--yellow);}
+
+    nav a{
+      color:var(--gray);
+      margin-left:20px;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    nav a:hover{color:var(--yellow);}
+
+    section{
+      padding:80px 40px;
+      max-width:1200px;
+      margin:0 auto;
+    }
+
+    /* HERO */
+    .hero{
+      max-width:900px;
+      margin:0 auto;
+      text-align:center;
+    }
+
+    .badge{
+      display:inline-block;
+      background:rgba(0,193,106,0.15);
+      color:var(--green);
+      padding:8px 18px;
+      border-radius:50px;
+      font-weight:700;
+      margin-bottom:20px;
+    }
+
+    .hero h1{
+      font-size:2.8rem;
+      line-height:1.2;
+      margin-bottom:20px;
+    }
+
+    .hero h1 span{color:var(--yellow);}
+
+    .hero p{
+      color:var(--gray);
+      font-size:1.1rem;
+    }
+
+    /* GRID */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#111;
+      border-radius:14px;
+      padding:30px;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .card h3{
+      color:var(--green);
+      margin-bottom:12px;
+    }
+
+    .card p{
+      color:var(--gray);
+      font-size:0.95rem;
+    }
+
+    /* DEMONSTRAÇÃO */
+    .demo-box{
+      background:#111;
+      border-radius:16px;
+      padding:40px;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .demo-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:30px;
+      margin-top:30px;
+    }
+
+    .demo-grid img,
+    .demo-grid video{
+      width:100%;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .label{
+      color:var(--green);
+      font-weight:700;
+      margin-bottom:10px;
+    }
+
+    /* AVALIAÇÕES */
+    .review{
+      background:#111;
+      border-radius:14px;
+      padding:25px;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .review p{
+      color:var(--gray);
+      font-size:0.95rem;
+      margin-bottom:10px;
+    }
+
+    .review strong{
+      color:var(--white);
+    }
+
+    /* CTA */
+    .cta{
+      background:linear-gradient(145deg,#0f0f0f,#171717);
+      border-radius:18px;
+      padding:60px 40px;
+      border:1px solid rgba(255,255,255,0.1);
+      text-align:center;
+    }
+
+    .cta h2{
+      font-size:2.3rem;
+      margin-bottom:15px;
+    }
+
+    .cta h2 span{color:var(--yellow);}
+
+    .cta p{
+      color:var(--gray);
+      margin-bottom:25px;
+    }
+
+    .btn{
+      background:var(--yellow);
+      color:#000;
+      padding:14px 30px;
+      border-radius:6px;
+      font-weight:800;
+      text-decoration:none;
+      display:inline-block;
+      transition:0.2s;
+    }
+
+    .btn:hover{transform:translateY(-2px);}
+
+    footer{
+      text-align:center;
+      padding:30px;
+      border-top:1px solid rgba(255,255,255,0.1);
+      color:var(--gray);
+      font-size:0.9rem;
+    }
+
+    @media(max-width:800px){
+      .demo-grid{grid-template-columns:1fr;}
+      .hero h1{font-size:2.2rem;}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <div class="logo">VisionUp <span>Studio Videos</span></div>
+  </div>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="resultados.html">Sobre</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="badge">Sobre e Resultados</div>
+  <h1>Vídeos criados para <span>vender mais</span></h1>
+  <p>
+    A VisionUp Studio Videos transforma imagens estáticas em vídeos modernos,
+    profissionais e focados em conversão.
+  </p>
+</section>
+
+<!-- SOBRE -->
+<section>
+  <div class="grid">
+    <div class="card">
+      <h3>Quem somos</h3>
+      <p>
+        Somos um estúdio digital especializado em transformar imagens em vídeos
+        curtos e profissionais, ideais para anúncios e redes sociais.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Nosso objetivo</h3>
+      <p>
+        Ajudar marcas e lojistas a aumentar engajamento e vendas usando vídeos
+        visuais, diretos e estratégicos.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Por que vídeos funcionam</h3>
+      <p>
+        Vídeos chamam mais atenção, aumentam o tempo de retenção e geram mais
+        cliques do que imagens estáticas.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Como funciona</h3>
+      <p>
+        Você envia as imagens, escolhe o pacote e nós criamos os vídeos prontos para
+        anúncios e redes sociais.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- DEMONSTRAÇÃO -->
+<section>
+  <div class="demo-box">
+    <h2 style="text-align:center;font-size:2rem;">
+      Exemplo <span style="color:var(--yellow);">real</span>
+    </h2>
+
+    <div style="display:flex; justify-content:center;">
+  <div style="width:100%; max-width:420px;">
+    <div class="label">Imagem original</div>
+    <img 
+      src="imagem-videos/exemplo-imagem.jpg" 
+      alt="Imagem original"
+      style="
+        width:100%;
+        border-radius:12px;
+        border:1px solid rgba(255,255,255,0.1);
+      "
+    >
+  </div>
+</div>
+
+
+     <div style="display:flex; justify-content:center;">
+  <div style="width:100%; max-width:420px;">
+    <div class="label">Vídeo gerado</div>
+    <video 
+      controls 
+      preload="metadata"
+      style="
+        width:100%;
+        border-radius:10px;
+        border:1px solid rgba(255,255,255,0.1);
+      ">
+      <source src="imagem-videos/WhatsApp Video 2025-12-29 at 19.15.38 (1).mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
+    </video>
+  </div>
+</div>
+
+</section>
+
+<!-- AVALIAÇÕES -->
+<section>
+  <h2 style="text-align:center;font-size:2.2rem;margin-bottom:40px;">
+    Avaliações de <span style="color:var(--yellow);">clientes</span>
+  </h2>
+
+  <div class="grid">
+    <div class="review">
+      ⭐⭐⭐⭐⭐
+      <p>"Os vídeos deram outra cara para meus anúncios. Muito mais profissional."</p>
+      <strong>— Loja Pet Online</strong>
+    </div>
+
+    <div class="review">
+      ⭐⭐⭐⭐⭐
+      <p>"Transformaram uma imagem simples em um vídeo que realmente chama atenção."</p>
+      <strong>— E-commerce de acessórios</strong>
+    </div>
+
+    <div class="review">
+      ⭐⭐⭐⭐⭐
+      <p>"Visual de marca grande. Recomendo demais."</p>
+      <strong>— Empreendedor Digital</strong>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section>
+  <div class="cta">
+    <h2>Pronto para criar <span>vídeos profissionais</span>?</h2>
+    <p>
+      Envie suas imagens agora e transforme seu conteúdo visual.
+    </p>
+    <a href="https://wa.me/5551996568285" class="btn">
+      Falar com a VisionUp Studio Videos
+    </a>
+
+    <p style="margin-top:15px;color:var(--green);font-weight:700;">
+      ⚡ Entrega rápida • Qualidade garantida
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 VisionUp Studio Videos — Vídeos que vendem mais.
+</footer>
+
+</body>
+</html>
