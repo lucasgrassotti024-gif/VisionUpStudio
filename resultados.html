@@ -2,9 +2,9 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Sobre e Resultados — VisionUp Studio Videos</title>
+  <title>Sobre — VisionUp Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Conheça a VisionUp Studio Videos e veja exemplos reais de imagens transformadas em vídeos profissionais para vendas.">
+  <meta name="description" content="Conheça o VisionUp Studio e veja como transformamos fotos comuns em imagens profissionais que vendem mais.">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
@@ -17,12 +17,7 @@
       --gray:#b5b5b5;
     }
 
-    *{
-      box-sizing:border-box;
-      margin:0;
-      padding:0;
-      font-family:'Inter',sans-serif;
-    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif;}
 
     body{
       background:var(--black);
@@ -38,11 +33,7 @@
       border-bottom:1px solid rgba(255,255,255,0.1);
     }
 
-    .logo{
-      font-size:1.4rem;
-      font-weight:800;
-    }
-
+    .logo{font-size:1.4rem;font-weight:800;}
     .logo span{color:var(--yellow);}
 
     nav a{
@@ -51,7 +42,6 @@
       text-decoration:none;
       font-weight:500;
     }
-
     nav a:hover{color:var(--yellow);}
 
     section{
@@ -60,27 +50,14 @@
       margin:0 auto;
     }
 
-    /* HERO */
     .hero{
-      max-width:900px;
-      margin:0 auto;
-      text-align:center;
-    }
-
-    .badge{
-      display:inline-block;
-      background:rgba(0,193,106,0.15);
-      color:var(--green);
-      padding:8px 18px;
-      border-radius:50px;
-      font-weight:700;
-      margin-bottom:20px;
+      max-width:800px;
     }
 
     .hero h1{
       font-size:2.8rem;
-      line-height:1.2;
       margin-bottom:20px;
+      line-height:1.2;
     }
 
     .hero h1 span{color:var(--yellow);}
@@ -90,23 +67,29 @@
       font-size:1.1rem;
     }
 
-    /* GRID */
+    .block{
+      background:#111;
+      border-radius:14px;
+      padding:40px;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
     .grid{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
       gap:30px;
     }
 
     .card{
       background:#111;
-      border-radius:14px;
-      padding:30px;
+      border-radius:12px;
+      padding:25px;
       border:1px solid rgba(255,255,255,0.08);
     }
 
     .card h3{
       color:var(--green);
-      margin-bottom:12px;
+      margin-bottom:10px;
     }
 
     .card p{
@@ -114,85 +97,43 @@
       font-size:0.95rem;
     }
 
-    /* DEMONSTRAÇÃO */
-    .demo-box{
-      background:#111;
-      border-radius:16px;
-      padding:40px;
-      border:1px solid rgba(255,255,255,0.1);
+    .section-title{
+      font-size:2.2rem;
+      margin-bottom:15px;
     }
 
-    .demo-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:30px;
-      margin-top:30px;
+    .section-title span{color:var(--yellow);}
+
+    .section-sub{
+      color:var(--gray);
+      margin-bottom:40px;
+      max-width:700px;
     }
 
-    .demo-grid img,
-    .demo-grid video{
+    .example img{
       width:100%;
       border-radius:12px;
       border:1px solid rgba(255,255,255,0.1);
     }
 
-    .label{
-      color:var(--green);
-      font-weight:700;
-      margin-bottom:10px;
-    }
-
-    /* AVALIAÇÕES */
-    .review{
-      background:#111;
-      border-radius:14px;
-      padding:25px;
-      border:1px solid rgba(255,255,255,0.08);
-    }
-
-    .review p{
-      color:var(--gray);
-      font-size:0.95rem;
-      margin-bottom:10px;
-    }
-
-    .review strong{
-      color:var(--white);
-    }
-
-    /* CTA */
     .cta{
-      background:linear-gradient(145deg,#0f0f0f,#171717);
-      border-radius:18px;
-      padding:60px 40px;
-      border:1px solid rgba(255,255,255,0.1);
+      background:linear-gradient(145deg,#0f0f0f,#161616);
+      border-radius:16px;
+      padding:50px;
       text-align:center;
-    }
-
-    .cta h2{
-      font-size:2.3rem;
-      margin-bottom:15px;
-    }
-
-    .cta h2 span{color:var(--yellow);}
-
-    .cta p{
-      color:var(--gray);
-      margin-bottom:25px;
+      border:1px solid rgba(255,255,255,0.1);
     }
 
     .btn{
+      display:inline-block;
+      margin-top:25px;
       background:var(--yellow);
       color:#000;
-      padding:14px 30px;
+      padding:14px 32px;
       border-radius:6px;
       font-weight:800;
       text-decoration:none;
-      display:inline-block;
-      transition:0.2s;
     }
-
-    .btn:hover{transform:translateY(-2px);}
 
     footer{
       text-align:center;
@@ -203,7 +144,6 @@
     }
 
     @media(max-width:800px){
-      .demo-grid{grid-template-columns:1fr;}
       .hero h1{font-size:2.2rem;}
     }
   </style>
@@ -212,9 +152,7 @@
 <body>
 
 <header>
-  <div style="display:flex;align-items:center;gap:12px;">
-    <div class="logo">VisionUp <span>Studio Videos</span></div>
-  </div>
+  <div class="logo">VisionUp <span>Studio</span></div>
   <nav>
     <a href="index.html">Início</a>
     <a href="resultados.html">Sobre</a>
@@ -223,139 +161,116 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="badge">Sobre e Resultados</div>
-  <h1>Vídeos criados para <span>vender mais</span></h1>
+  <h1>Transformamos fotos comuns em <span>imagens que vendem</span></h1>
   <p>
-    A VisionUp Studio Videos transforma imagens estáticas em vídeos modernos,
-    profissionais e focados em conversão.
+    O VisionUp Studio nasceu para resolver um problema simples:
+    produtos bons não vendem quando a imagem é fraca.
   </p>
 </section>
 
-<!-- SOBRE -->
+<!-- O QUE FAZEMOS -->
 <section>
-  <div class="grid">
-    <div class="card">
-      <h3>Quem somos</h3>
-      <p>
-        Somos um estúdio digital especializado em transformar imagens em vídeos
-        curtos e profissionais, ideais para anúncios e redes sociais.
-      </p>
-    </div>
+  <div class="block">
+    <h2 class="section-title">O que o <span>VisionUp Studio</span> faz?</h2>
+    <p class="section-sub">
+      Nós pegamos fotos reais de produtos, comidas, roupas e veículos e transformamos em imagens
+      com padrão profissional — prontas para anúncios, cardápios, marketplaces e redes sociais.
+    </p>
 
-    <div class="card">
-      <h3>Nosso objetivo</h3>
-      <p>
-        Ajudar marcas e lojistas a aumentar engajamento e vendas usando vídeos
-        visuais, diretos e estratégicos.
-      </p>
-    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Imagem com foco em venda</h3>
+        <p>Não é só deixar bonito. Ajustamos luz, contraste e cores para destacar o produto e gerar desejo.</p>
+      </div>
 
-    <div class="card">
-      <h3>Por que vídeos funcionam</h3>
-      <p>
-        Vídeos chamam mais atenção, aumentam o tempo de retenção e geram mais
-        cliques do que imagens estáticas.
-      </p>
-    </div>
+      <div class="card">
+        <h3>Padrão profissional</h3>
+        <p>Visual limpo, equilibrado e com aparência de marca organizada e confiável.</p>
+      </div>
 
-    <div class="card">
-      <h3>Como funciona</h3>
-      <p>
-        Você envia as imagens, escolhe o pacote e nós criamos os vídeos prontos para
-        anúncios e redes sociais.
-      </p>
+      <div class="card">
+        <h3>Para quem vende</h3>
+        <p>Lojistas, restaurantes, vendedores online, marketplaces e anúncios.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- DEMONSTRAÇÃO -->
+<!-- EXEMPLOS -->
 <section>
-  <div class="demo-box">
-    <h2 style="text-align:center;font-size:2rem;">
-      Exemplo <span style="color:var(--yellow);">real</span>
-    </h2>
-
-    <div style="display:flex; justify-content:center;">
-  <div style="width:100%; max-width:420px;">
-    <div class="label">Imagem original</div>
-    <img 
-      src="imagem-videos/exemplo-imagem.jpg" 
-      alt="Imagem original"
-      style="
-        width:100%;
-        border-radius:12px;
-        border:1px solid rgba(255,255,255,0.1);
-      "
-    >
-  </div>
-</div>
-
-
-     <div style="display:flex; justify-content:center;">
-  <div style="width:100%; max-width:420px;">
-    <div class="label">Vídeo gerado</div>
-    <video 
-      controls 
-      preload="metadata"
-      style="
-        width:100%;
-        border-radius:10px;
-        border:1px solid rgba(255,255,255,0.1);
-      ">
-      <source src="imagem-videos/WhatsApp Video 2025-12-29 at 19.15.38 (1).mp4" type="video/mp4">
-      Seu navegador não suporta vídeo.
-    </video>
-  </div>
-</div>
-
-</section>
-
-<!-- AVALIAÇÕES -->
-<section>
-  <h2 style="text-align:center;font-size:2.2rem;margin-bottom:40px;">
-    Avaliações de <span style="color:var(--yellow);">clientes</span>
-  </h2>
+  <h2 class="section-title">Exemplos de <span>Transformação</span></h2>
+  <p class="section-sub">
+    Abaixo estão exemplos reais de fotos comuns transformadas em imagens profissionais.
+  </p>
 
   <div class="grid">
-    <div class="review">
-      ⭐⭐⭐⭐⭐
-      <p>"Os vídeos deram outra cara para meus anúncios. Muito mais profissional."</p>
-      <strong>— Loja Pet Online</strong>
+    <div class="example">
+      <img src="imagens/exemplo-antes-depois-comida.jpg" alt="Antes e Depois Pastel">
     </div>
 
-    <div class="review">
-      ⭐⭐⭐⭐⭐
-      <p>"Transformaram uma imagem simples em um vídeo que realmente chama atenção."</p>
-      <strong>— E-commerce de acessórios</strong>
+    <div class="example">
+      <img src="imagens/exemplo-antes-depois-roupa.jpg" alt="Antes e Depois Camisa">
     </div>
 
-    <div class="review">
-      ⭐⭐⭐⭐⭐
-      <p>"Visual de marca grande. Recomendo demais."</p>
-      <strong>— Empreendedor Digital</strong>
+    <div class="example">
+      <img src="imagens/exemplo-antes-depois-veiculo.jpg" alt="Antes e Depois Veículo">
     </div>
   </div>
 </section>
 
-<!-- CTA FINAL -->
+<!-- PROVA SOCIAL -->
+<section>
+  <div class="block">
+    <h2 class="section-title">Trabalhos já <span>realizados</span></h2>
+    <p class="section-sub">
+      Já ajudamos vendedores e pequenos negócios a apresentarem melhor seus produtos.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        ⭐⭐⭐⭐⭐
+        <p>
+          "Depois das imagens, meus anúncios ficaram muito mais profissionais.
+          Chamou mais atenção e vendeu melhor."
+        </p>
+        <strong>Cliente — Comércio local</strong>
+      </div>
+
+      <div class="card">
+        ⭐⭐⭐⭐⭐
+        <p>
+          "As fotos ficaram com cara de cardápio profissional.
+          A diferença é absurda."
+        </p>
+        <strong>Cliente — Alimentação</strong>
+      </div>
+
+      <div class="card">
+        ⭐⭐⭐⭐
+        <p>
+          "Melhorou muito a qualidade. Valeu muito a pena."
+        </p>
+        <strong>Cliente — Vendas online</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
 <section>
   <div class="cta">
-    <h2>Pronto para criar <span>vídeos profissionais</span>?</h2>
+    <h2>Quer ver suas imagens com esse <span>padrão profissional</span>?</h2>
     <p>
-      Envie suas imagens agora e transforme seu conteúdo visual.
+      Envie suas fotos agora e transforme sua apresentação visual.
     </p>
     <a href="https://wa.me/5551996568285" class="btn">
-      Falar com a VisionUp Studio Videos
+      Falar no WhatsApp
     </a>
-
-    <p style="margin-top:15px;color:var(--green);font-weight:700;">
-      ⚡ Entrega rápida • Qualidade garantida
-    </p>
   </div>
 </section>
 
 <footer>
-  © 2026 VisionUp Studio Videos — Vídeos que vendem mais.
+  © 2026 VisionUp Studio — Imagens que vendem.
 </footer>
 
 </body>
