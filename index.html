@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>VisionUp Studio Videos — Vídeos que Vendem Mais</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Transformamos imagens estáticas em vídeos profissionais para anúncios, redes sociais e vendas. VisionUp Studio Videos.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --black:#0b0b0b;
+      --yellow:#ffd000;
+      --green:#00c16a;
+      --white:#ffffff;
+      --gray:#b5b5b5;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif;}
+
+    body{
+      background:var(--black);
+      color:var(--white);
+      line-height:1.6;
+    }
+
+    header{
+      padding:20px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+
+    .logo{
+      font-size:1.4rem;
+      font-weight:800;
+    }
+
+    .logo span{color:var(--yellow);}
+
+    nav a{
+      color:var(--gray);
+      margin-left:20px;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    nav a:hover{color:var(--yellow);}
+
+    section{
+      padding:80px 40px;
+      max-width:1200px;
+      margin:0 auto;
+    }
+
+    /* HERO */
+    .hero{
+      display:grid;
+      grid-template-columns:1.2fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .hero h1{
+      font-size:3rem;
+      line-height:1.2;
+      margin-bottom:20px;
+    }
+
+    .hero h1 span{color:var(--yellow);}
+
+    .hero p{
+      color:var(--gray);
+      margin-bottom:30px;
+      font-size:1.1rem;
+    }
+
+    .cta{
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .btn-primary{
+      background:var(--yellow);
+      color:#000;
+      padding:14px 28px;
+      border-radius:6px;
+      font-weight:800;
+      text-decoration:none;
+      transition:0.2s;
+    }
+
+    .btn-primary:hover{transform:translateY(-2px);}
+
+    .btn-secondary{
+      border:2px solid var(--green);
+      color:var(--green);
+      padding:12px 26px;
+      border-radius:6px;
+      font-weight:800;
+      text-decoration:none;
+    }
+
+    .mockup{
+      background:linear-gradient(145deg,#111,#181818);
+      border-radius:12px;
+      padding:30px;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .mockup h3{
+      color:var(--green);
+      margin-bottom:12px;
+    }
+
+    .mockup ul li{
+      color:var(--gray);
+      margin-bottom:8px;
+    }
+
+    /* SEÇÕES */
+    .section-title{
+      font-size:2.2rem;
+      margin-bottom:15px;
+    }
+
+    .section-title span{color:var(--yellow);}
+
+    .section-sub{
+      color:var(--gray);
+      margin-bottom:40px;
+      max-width:700px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#111;
+      border-radius:10px;
+      padding:25px;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .card h4{
+      color:var(--green);
+      margin-bottom:10px;
+    }
+
+    .card p{
+      color:var(--gray);
+      font-size:0.95rem;
+    }
+
+    /* PACOTES */
+    .product{
+      background:#111;
+      border-radius:10px;
+      padding:25px;
+      border:1px solid rgba(255,255,255,0.08);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .product img{
+      width:100%;
+      height:150px;
+      object-fit:cover;
+      border-radius:8px;
+      margin-bottom:15px;
+    }
+
+    .product h4{
+      color:var(--yellow);
+      margin-bottom:8px;
+    }
+
+    .product p{
+      color:var(--gray);
+      margin-bottom:10px;
+      font-size:0.95rem;
+    }
+
+    .price{
+      font-size:1.2rem;
+      font-weight:800;
+      color:var(--white);
+    }
+
+    .note{
+      font-size:0.8rem;
+      color:var(--gray);
+    }
+
+    /* CTA FINAL */
+    .cta-final{
+      background:linear-gradient(145deg,#0f0f0f,#161616);
+      border-radius:14px;
+      padding:50px;
+      border:1px solid rgba(255,255,255,0.1);
+      text-align:center;
+    }
+
+    .cta-final h2{
+      font-size:2.2rem;
+      margin-bottom:15px;
+    }
+
+    .cta-final h2 span{color:var(--yellow);}
+
+    .cta-final p{
+      color:var(--gray);
+      margin-bottom:25px;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      border-top:1px solid rgba(255,255,255,0.1);
+      color:var(--gray);
+      font-size:0.9rem;
+    }
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .hero h1{font-size:2.4rem;}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <div class="logo">VisionUp <span>Studio Videos</span></div>
+  </div>
+  <nav>
+   <a href="index.html">Inicio</a>
+    <a href="resultados.html">Sobre</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Transformamos imagens em <span>vídeos que vendem mais</span></h1>
+    <p>
+      Criamos vídeos curtos, modernos e profissionais a partir de imagens estáticas, ideais para anúncios, redes sociais e marketplaces.
+    </p>
+
+    <p style="margin-top:15px;color:var(--green);font-weight:700;">
+      🎬 Vídeos prontos para anúncios | Entrega rápida
+    </p>
+  </div>
+
+  <div class="mockup">
+    <h3>O que entregamos</h3>
+    <ul>
+      <li>✔ Animações profissionais</li>
+      <li>✔ Movimentos suaves e modernos</li>
+      <li>✔ Formato ideal para anúncios</li>
+      <li>✔ Pronto para Instagram, Meta e TikTok</li>
+      <li>✔ Mais atenção e conversão</li>
+    </ul>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section id="beneficios">
+  <h2 class="section-title">Por que usar <span>vídeos</span>?</h2>
+  <p class="section-sub">
+    Vídeos chamam mais atenção, geram mais cliques e aumentam as chances de venda.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Mais engajamento</h4>
+      <p>Vídeos geram mais retenção do que imagens estáticas.</p>
+    </div>
+
+    <div class="card">
+      <h4>Visual profissional</h4>
+      <p>Seu produto com aparência de marca grande.</p>
+    </div>
+
+    <div class="card">
+      <h4>Pronto para anúncios</h4>
+      <p>Formatos ideais para campanhas pagas.</p>
+    </div>
+
+    <div class="card">
+      <h4>Entrega rápida</h4>
+      <p>Processo ágil e eficiente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO DE DEMONSTRAÇÃO (IMAGEM + VÍDEO) -->
+<section>
+  <div style="
+    max-width:1000px;
+    margin:0 auto;
+    background:#111;
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:16px;
+    padding:40px;
+  ">
+
+    <h2 style="
+      font-size:2rem;
+      margin-bottom:15px;
+      text-align:center;
+    ">
+      Exemplos de <span style="color:#ffd000;">conteúdo transformado</span>
+    </h2>
+
+    <p style="
+      color:#b5b5b5;
+      text-align:center;
+      margin-bottom:40px;
+    ">
+      Veja uma imagem estática e o vídeo gerado a partir dela.
+    </p>
+
+    <div style="
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:30px;
+      align-items:center;
+    ">
+
+      <!-- IMAGEM -->
+      <div>
+        <p style="color:#00c16a;font-weight:700;margin-bottom:10px;">
+          Imagem original
+        </p>
+        <img 
+          src="imagens/cuidados-filhotes.png"
+          alt="Imagem estática original"
+          style="
+            width:100%;
+            border-radius:12px;
+            border:1px solid rgba(255,255,255,0.1);
+          "
+        >
+      </div>
+
+      <!-- VÍDEO -->
+      <div>
+        <p style="color:#00c16a;font-weight:700;margin-bottom:10px;">
+          Vídeo gerado
+        </p>
+        <video 
+          controls 
+          playsinline 
+          preload="metadata"
+          style="
+            width:100%;
+            border-radius:12px;
+            border:1px solid rgba(255,255,255,0.1);
+          "
+        >
+          <source src="videos/video-exemplo.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- PACOTES -->
+<section id="pacotes">
+  <h2 class="section-title">Pacotes de <span>Vídeos</span></h2>
+  <p class="section-sub">
+    Escolha o pacote ideal e transforme suas imagens em vídeos profissionais.
+  </p>
+
+  <!-- IMAGEM JÁ PRONTA -->
+  <h3 style="color:var(--green);margin-bottom:16px;">Imagem pronta → Vídeo</h3>
+  <div class="grid">
+    <a class="product" href="#">
+      <img src="imagens/exemplo-video.jpg">
+      <h4>1 Vídeo</h4>
+      <p>Transformação de 1 imagem em vídeo.</p>
+      <div class="price">R$ 25,00</div>
+    </a>
+
+    <a class="product" href="#">
+      <img src="imagens/exemplo-video.jpg">
+      <h4>5 Vídeos</h4>
+      <p>Pacote com desconto por unidade.</p>
+      <div class="price">R$ 115,00</div>
+      
+    </a>
+
+    <a class="product" href="#">
+      <img src="imagens/exemplo-video.jpg">
+      <h4>10 Vídeos</h4>
+      <p>Ideal para anúncios contínuos.</p>
+      <div class="price">R$ 210,00</div>
+     
+    </a>
+  </div>
+
+  <!-- CRIAÇÃO DO ZERO -->
+  <h3 style="color:var(--green);margin:40px 0 16px;">Criação da imagem + Vídeo</h3>
+  <div class="grid">
+    <a class="product" href="#">
+      <img src="imagens/exemplo-video.jpg">
+      <h4>1 Vídeo Completo</h4>
+      <p>Criamos a imagem do zero e o vídeo.</p>
+      <div class="price">R$ 40,00</div>
+    </a>
+
+    <a class="product" href="#">
+      <img src="imagens/exemplo-video.jpg">
+      <h4>5 Vídeos Completos</h4>
+      <p>Visual completo com desconto.</p>
+      <div class="price">R$ 185,00</div>
+      
+    </a>
+
+    <a class="product" href="#">
+      <img src="imagens/exemplo-video.jpg">
+      <h4>10 Vídeos Completos</h4>
+      <p>Escala máxima e melhor custo.</p>
+      <div class="price">R$ 340,00</div>
+      
+    </a>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="contato">
+  <div class="cta-final">
+    <h2>Pronto para vender mais com <span>vídeos profissionais</span>?</h2>
+    <p>
+      Envie suas imagens agora e transforme seu conteúdo em vídeos que chamam atenção e convertem.
+    </p>
+    <a href="https://wa.me/5551996568285" class="btn-primary">
+      Quero criar meus vídeos agora
+    </a>
+
+    <p style="margin-top:15px;color:var(--green);font-weight:700;">
+      ⚡ Vagas limitadas por dia para manter qualidade
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 VisionUp Studio Videos — Vídeos que vendem mais.
+</footer>
+
+</body>
+</html>
